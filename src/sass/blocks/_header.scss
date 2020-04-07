@@ -71,8 +71,11 @@
     }
     &__line {
         width: 760px;
+        margin: 0 auto;
         margin-top: 38px;
-        text-align: center;
+        height: 1px;
+        background-color: #fff;
+        
     }
     &__block {
         margin-top: 27px;

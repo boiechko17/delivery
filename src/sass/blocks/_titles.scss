@@ -5,3 +5,20 @@
     color: #2e2e2e;
     text-align: center; 
 }
+
+.line {
+    
+    width: 148px;
+    height: 2px;
+    background-color: $main-color;
+    margin: 0 auto;
+    margin-top: 20px; 
+}
+
+.subtitle {
+    font-size: 21px;
+    font-weight: 300;
+    color: #2e2e2e;
+    margin-top: 17px;
+    text-align: center;
+}
