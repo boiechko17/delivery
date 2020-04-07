@@ -4,6 +4,10 @@
     text-transform: uppercase;
     color: #2e2e2e;
     text-align: center; 
+    &_agent {
+        margin-top: 20px;
+        color: #ffffff;
+    }
 }
 
 .line {
@@ -21,4 +25,9 @@
     color: #2e2e2e;
     margin-top: 17px;
     text-align: center;
+    &_agent {
+        font-size: 19px;
+        color: #ffffff;
+        margin-top: 22px;
+    }
 }
