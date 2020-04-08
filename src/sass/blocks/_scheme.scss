@@ -1,0 +1,35 @@
+.scheme {
+    min-height: 455px;
+    background-color: #f3f3f3;
+    padding: 51px 0 46px 0;
+    &__block {
+        align-items: center;
+        margin-top: 35px;
+        &_less {
+            margin-top: 20px;
+            width: 100%;
+            margin-left: 50px;
+        }
+    }
+    &__icon {
+        display: block;
+        margin:  0 auto;
+    }
+    &__text {
+        margin-top: 12px;
+        &_title {
+            font-size: 16px;
+            font-weight: 700;
+            color: $main-color;
+            text-align: center;
+        }
+        &_descr {
+            margin-top: 11px;
+            font-size: 14px;
+            font-weight: 300;
+            color: #3a3a3a;
+            text-align: center;
+        }
+    }
+    
+}
