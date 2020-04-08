@@ -70,11 +70,15 @@
         text-align: center;
     }
     &__line {
-        width: 760px;
-        margin: 0 auto;
+        height: 6px;
+        background-image:
+          radial-gradient(circle at center, white 3px, transparent 0px), /* circle */
+          linear-gradient(to right, transparent, white), /* left */
+          linear-gradient(to left, transparent, white); /* right */
+        background-size: 6px 6px, calc(50% - 9px) 2px, calc(50% - 9px) 2px;
+        background-position: 50% 0%, 0 50%, 100% 50%;
+        background-repeat: no-repeat;
         margin-top: 38px;
-        height: 1px;
-        background-color: #fff;
         
     }
     &__block {
