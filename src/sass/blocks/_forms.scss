@@ -1,0 +1,29 @@
+.feed-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1140px;
+    height: 166px;
+    margin-top: 71px;
+    input {
+        margin-top: 68px;
+        margin-right: 10px;
+        height: 50px;
+        width: 270px;
+        border-radius: 20px;
+        border: 1px grey solid;
+        padding: 0 20px;
+        color: #4b4b4b;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &_consultation {
+        border-left: 1px solid #d0d0d0;
+        border-right: 1px solid #d0d0d0;
+        /* border-bottom */
+        background: linear-gradient(#d0d0d0, #d0d0d0), linear-gradient(#d0d0d0, #d0d0d0) ,linear-gradient(#d0d0d0, #d0d0d0), linear-gradient(#d0d0d0, #d0d0d0);;
+        background-size: 470px 1px, 470px 1px;
+        background-repeat: no-repeat, no-repeat;
+        background-position: left bottom, right bottom, left top, right top;
+    }
+}

@@ -1,0 +1,22 @@
+.consultation {
+    padding-bottom: 80px;
+    position: relative;
+    &__button {
+        top: 125px;
+        position: absolute;
+        width: 180px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__round {
+        position: absolute;
+        border: 1px solid $main-color;
+        left: 51.10%;
+        transform: translateX(-50%);
+        top: 60px;
+        &_icon {
+            padding-top: 17px;
+            margin: 0 22px;
+        }
+    }
+}

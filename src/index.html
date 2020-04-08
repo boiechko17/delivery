@@ -26,7 +26,7 @@
                             <a href="#work" class="header__list_item">Наша робота</a>
                         </li>
                         <li class="header__list_link">
-                            <a href="#" class="header__list_item">Ціни</a>
+                            <a href="#prices" class="header__list_item">Ціни</a>
                         </li>
                         <li class="header__list_link">
                             <a href="#" class="header__list_item">Схема роботи</a>
@@ -257,8 +257,8 @@
 
     <section class="agent">
         <div class="container">
-            <div class="agent__round">
-                <img src="icons/agent.png" alt="agent" class="agent__round_icon">
+            <div class="round">
+                <img src="icons/agent.png" alt="agent" class="round_icon">
             </div>
 
             <div class="title title_agent">Агент в Європі</div>
@@ -268,7 +268,7 @@
         </div>
     </section>
 
-    <section class="prices">
+    <section class="prices" id="prices">
         <div class="container">
             <div class="title">Ціни на будь-який варіант доставки</div>
             <div class="line"></div>
@@ -420,6 +420,21 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="consultation">
+        <div class="container">
+            <div class="title title_consultation">Замовити безкоштовну консультацію</div>
+            <div class="round consultation__round">
+                <img src="icons/consultation.png" alt="consultation" class="round_icon consultation__round_icon">
+            </div>
+            <form class="feed-form feed-form_consultation" action="#">
+                <input name="name" required placeholder="Ваше ім'я" type="text">
+                <input name="phone" require d placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <button class="button consultation__button">відправити запит</button>
+            </form>
         </div>
     </section>
 
