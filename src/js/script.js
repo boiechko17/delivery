@@ -13,4 +13,11 @@ $(document).ready(function() {
     toggleSlide('.button_prices');
     toggleSlide('.prices-item__back');
 
+    $(function () {
+        $('#carouselExampleControls').carousel({
+          interval: false,
+          keyboard: false,
+        });
+    });
+
 });

@@ -1,0 +1,63 @@
+.feedback {
+    min-height: 470px;
+    padding: 51px 0 65px 0;
+    &-item {
+        margin-top: 31px;
+        width: 600px;
+        margin: 0 auto;
+        float: none;
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+    &__text {
+        margin-top: 19px;
+        &_title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #3a3a3a;
+            text-align: center;
+        }
+        &_descr {
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 300;
+            color: #3a3a3a;
+            margin-top: 18px;
+            text-align: center;
+        }
+    }
+}
+
+.carousel-control {
+    &-next {
+        right: 340px;
+        height: 100px;
+        &-icon {
+            width: 140px;
+            height: 65%;
+            background-image: none;
+            &::after {
+                content: '>';
+                font-size: 55px;
+                color: $main-color;
+            }
+        }
+    }
+    &-prev {
+        left: 340px;
+        height: 100px;
+        &-icon {
+            width: 140px;
+            height: 65%;
+            background-image: none;
+            &::after {
+                content: '<';
+                font-size: 55px;
+                color: $main-color;
+            }
+        }
+    }
+}
+
