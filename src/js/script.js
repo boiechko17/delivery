@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    //Секція Ціни для кнопки - Докладнішк
     function toggleSlide(item) {
         $(item).each(function(i) {
             $(this).on('click', function(e) {
@@ -13,6 +14,7 @@ $(document).ready(function() {
     toggleSlide('.button_prices');
     toggleSlide('.prices-item__back');
 
+    //Параметри для слайдеру
     $(function () {
         $('.carousel').carousel({
           interval: false,
