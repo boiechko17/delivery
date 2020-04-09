@@ -26,4 +26,28 @@
         background-repeat: no-repeat, no-repeat;
         background-position: left bottom, right bottom, left top, right top;
     }
+    &_questions {
+        background-color: rgba($color: #ffff, $alpha: 0.7);
+        margin-top: 0px;
+        flex-wrap: wrap;
+        padding-top: 18px;
+        justify-content: none;
+        width: 100%;
+        height: 250px;
+        input {
+            margin-top: 0px;
+            /* margin-right: 0px; */
+            width: 268px;
+            height: 45px;
+            background-color: #ffffff;
+            border: 1px solid rgba(0,0,0,0.21);
+        }
+        .big {
+            margin-top: -25px;
+            width: 813px;
+            height: 71px;
+            border-radius: 10px;
+            padding: 0 15px;
+        }
+    }
 }

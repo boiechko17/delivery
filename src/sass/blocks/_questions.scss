@@ -1,0 +1,27 @@
+.questions {
+    min-height: 438px;
+    padding: 62px 0 79px 0;
+    background: url(../../img/planejpg.png) center center/ cover no-repeat;
+    &__block {
+        width: 896px;
+        height: 365px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__title {
+        padding-top: 20px;
+        width: 100%;
+        text-align: center;
+        line-height: 20px;
+        background-color: #25333c;
+        height: 68px;
+        font-size: 19px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        span {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}

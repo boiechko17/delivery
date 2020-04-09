@@ -14,10 +14,9 @@ $(document).ready(function() {
     toggleSlide('.prices-item__back');
 
     $(function () {
-        $('#carouselExampleControls').carousel({
+        $('.carousel').carousel({
           interval: false,
           keyboard: false,
         });
     });
-
 });
