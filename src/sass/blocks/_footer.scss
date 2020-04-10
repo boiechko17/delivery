@@ -1,0 +1,80 @@
+.footer {
+    min-height: 201px;
+    background-color: #25333c;
+    padding: 24px 0 36px 0;
+    &_icon {
+        height: 100%;
+    }
+    &__title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-top: 30px;
+    }
+    &__contacts {
+        margin-top: 18px;
+        &_descr {
+            text-align: right;
+            font-size: 15px;
+            font-weight: 300;
+            color: #ffffff;
+        }
+        &_number {
+            font-size: 17px;
+            font-weight: 700;
+            color: #ffffff;
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+    &__social {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        &_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 4px;
+            width: 40px;
+            height: 40px;
+            background-color: #ffffff;
+            border-radius: 100%;
+            margin-left: 40px;
+            color: #070716;
+            &:hover {
+                color: #070716; 
+                text-decoration: none;
+            }
+        }
+    }
+    &__line {
+        width: 1171px;
+        height: 1px;
+        opacity: 0.3;
+        background-color: #fff;
+        margin-top: 30px;
+    }
+    &__site {
+        margin-top: 30px;
+        opacity: 0.6;
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    &__conf {
+        display: block;
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 300;
+        text-decoration: underline;
+        color: $main-color;
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
