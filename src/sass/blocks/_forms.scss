@@ -60,7 +60,51 @@
             border-radius: 5px;
             background-color: #ffffff;
             margin-top: 0;
-            /* border: none; */
         }
+    }
+    &_order {
+        margin-top: 0px;
+        min-height: 220px;
+        display: inline-block;
+        label {
+            height: 100px;
+            margin-left: 20px;
+            font-weight: 700;
+            font-size: 22px;
+            color: #2B2B2B;
+            line-height: 1.36;
+            input {
+                display: flex;
+                width: 270px;
+                height: 40px;
+            }
+            .from, .where{
+                width: 340px;
+            }   
+            select {
+                display: flex;
+                width: 270px;
+                height: 40px;
+                font-size: 14px;
+                margin: 10px 0px 10px 0px;
+                border-radius: 5px;
+                background-color: #ffffff;
+                margin-top: 0;
+            }
+            i.fas {
+                width: 36px;
+                height: 26px;
+                line-height: 100px;
+                text-align: center;
+                margin-right: -26px;
+                position: relative;
+                z-index: 1;
+                float: left;
+            }                
+            i.fas + input {
+                padding-left: 33px;
+            }
+        }
+
     }
 }

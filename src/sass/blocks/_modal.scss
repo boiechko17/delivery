@@ -40,6 +40,34 @@
     &_mini {
         min-height: 140px;
     }
+    &_order {
+        min-height: 340px;
+        width: 1000px; 
+        padding: 25px 10px 10px 10px;
+    }
+}
+
+#result {
+    font-size: 14px;
+    display: block;
+    display: none;
+    margin: 25px 0;
+    padding: 15px 15px;
+    margin-left: 10px;
+    border: 1px solid #25333c;
+    .info {
+        display: block;
+        margin-top: 10px;
+    }
+    .dollar {
+        font-size: 18px;
+    }
+}
+
+#res {
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: underline;
 }
 
 #call, #order, #thanks {

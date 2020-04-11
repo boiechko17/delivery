@@ -96,7 +96,7 @@
                 </div>
             </div>
 
-            <button class="button button_main">отримати розрахунок</button>
+            <button data-modal="order" class="button button_main">отримати розрахунок</button>
 
         </div>
     </header>
@@ -675,12 +675,53 @@
             <div class="modalw__subtitle">Просто заповніть форму заявки</div>
             <div class="modalw__descr">і ми передзвонимо вам протягом 10 хвилин</div>
             <form class="feed-form feed-form_modal" action="#">
-                <input required name="name"  class="rfield" placeholder="Ваше ім'я" type="text">
-                <input required name="phone" class="rfield" placeholder="Ваш телефон">
-                <input required name="email" class="rfield" placeholder="Ваш E-mail" type="email">
+                <input name="name"  class="rfield" placeholder="Ваше ім'я" type="text">
+                <input name="phone" class="rfield" placeholder="Ваш телефон">
+                <input name="email" class="rfield" placeholder="Ваш E-mail" type="email">
                 <button type="submit" class="button button_call submit">Відправити запит</button>
             </form>
         </div>
+        <div class="modalw modalw_order" id="order">
+            <div class="modalw__close">&times;</div>
+            <form class="feed-form feed-form_modal feed-form_order" id="calc" action="#">
+                <label>
+                    Звідки
+                    <i class="fas fa-map-marker-alt" style="color: 	#90ee90;"></i>
+                    <input type="text" name="from" class="from rfield">
+                </label>
+                <label>
+                    Куди
+                    <i class="fas fa-map-marker-alt" style="color: #0000FF;"></i>
+                    <input type="text" name="where" class="where rfield">
+                </label>
+                <label>
+                    Загальна вага
+                    <input name="name" id="kilo" class="rfield" placeholder="тонн" type="number">
+                </label>
+                <label>
+                    Загальний обсяг
+                    <input name="phone" id="metres" class="rfield" placeholder="м³" type="number">
+                </label>
+                <label>
+                    Тип вантажу
+                    <select name="" id="">
+                        <option value="Textile">Текстиль</option>
+                        <option value="Children">Товари для дітей</option>
+                        <option value="Equipment">Обладнання та комплектуючі</option>
+                        <option value="Auto">Автомобільні запчастини</option>
+                        <option value="Building">Будматеріали</option>
+                        <option value="Other">Інше</option>
+                    </select>
+                </label>
+                <button type="submit" class="button button_calc submit">Розрахувати</button>
+                <div id="result">
+                    Орієнтовна вартість доставки: <span class="dollar">$</span><div id="res"></div> <br>
+                    <span class="info">
+                        Дана вартість вказана для ознайомлення і може змінитися як в більшу, так і в меншу сторону. Для отримання остаточної вартості - зв'яжіться з нами.
+                    </span>
+                </div>
+            </form>
+        </div>          
         <div class="modalw modalw_mini" id="thanks">
             <div class="modalw__close">&times;</div>
             <div class="modalw__subtitle">Дякуємо за Вашу заявку!</div>

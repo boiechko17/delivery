@@ -26,6 +26,12 @@ $(document).ready(function() {
     $('[data-modal=call]').on('click', function(){
 		$('.overlay, #call').fadeIn('slow');
     });
+
+    $('[data-modal=order]').on('click', function(){
+		$('.overlay, #order').fadeIn('slow');
+    });
+
+    //Коли закриваємо будь-яке модальне вікно
     $('.modalw__close').on('click', function(){
         $('.overlay, #call, #order, #thanks').fadeOut('slow');
         $('.feed-form').each(function(){
@@ -34,6 +40,8 @@ $(document).ready(function() {
             }); 
             this.reset();
         })
+        $('#result').fadeOut('fast');
+        $('.feed-form_order').removeAttr("style","min-height:400px;");
     });
 
     // Функція перевіряє чи були введені дані в форму
@@ -85,6 +93,25 @@ $(document).ready(function() {
                     if(form.hasClass('feed-form_modal')){
                         $('#call').fadeOut('slow');
                     }
+                    // Рахуємо та виводимо вартість доставки
+                    if(form.hasClass('feed-form_order')){
+                        var kg = document.getElementById('kilo').value;
+                        var metr = document.getElementById('metres').value;
+                        var multi = 210;
+                        if(kg >= 5 ) {
+                            multi /= 3;
+                        }
+                        if (metr >= 10) {
+                            multi /= 2;
+                        }
+                        var result = kg * metr * multi;
+                        
+                        document.getElementById('res').innerHTML = result;
+
+                        form.attr("style","min-height:400px;");
+                        $('#result').fadeIn('slow');
+                        return false;
+                    }
                     $('.overlay, #thanks').fadeIn('slow');
                     return false; 
                 }
@@ -93,9 +120,10 @@ $(document).ready(function() {
     }
 
     //Викликаємо функцію для всіх форм
-    checkForms('.feed-form_consultation', '.consultation__button');
-    checkForms('.feed-form_questions', '.button_questions');
-    checkForms('.feed-form_modal', '.button_call');
+    checkForms('.feed-form_consultation');
+    checkForms('.feed-form_questions');
+    checkForms('.feed-form_modal');
+    checkForms('.feed-form_order');
     
 
     //показувати pageup коли проксролив до 1600px
@@ -122,6 +150,5 @@ $(document).ready(function() {
 
     for(var i = 0; i < mashref.length; i++){
         scroll(mashref[i]);
-    }
-    
+    } 
 });
