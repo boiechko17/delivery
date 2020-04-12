@@ -157,6 +157,31 @@ $(document).ready(function() {
     for(var i = 0; i < mashref.length; i++){
         scroll(mashref[i]);
     } 
+
+    // Маска вводу для телефона
+    $('input[name=phone]').inputmask("+38 (099) 999-99-99");
+
+    // Маска вводу для електронної пошти
+    $("input[name=email]").inputmask({
+        mask: "*{1,20}[*{1,20}][*{1,20}][*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+        greedy: false,
+        onBeforePaste: function (pastedValue) {
+            pastedValue = pastedValue.toLowerCase();
+            return pastedValue.replace("mailto:", "");
+        },
+        definitions: {
+            '*': {
+                validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+                cardinality: 1,
+                casing: "lower"
+            }
+        }
+    });
+
+    // Маска вводу для міста
+    $("input[name=from]").inputmask("м. [*{1,20}][*{1,20}]");
+    $("input[name=where]").inputmask("м. [*{1,20}][*{1,20}]");
+
 });
 
 // зручне меню для мобільних пристроїв
