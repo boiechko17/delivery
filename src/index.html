@@ -15,46 +15,54 @@
 <body>
     
     <header id="up" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1">
-                    <img src="icons/logo.png" alt="main_logo" class="header__logo">
-                </div>
-                <div class="col-md-10 col-lg-7">
-                    <ul class="header__list">
-                        <li class="header__list_link">
-                            <a href="#advantages" class="header__list_item">Переваги</a>
-                        </li>
-                        <li class="header__list_link">
-                            <a href="#work" class="header__list_item">Наша робота</a>
-                        </li>
-                        <li class="header__list_link">
-                            <a href="#prices" class="header__list_item">Ціни</a>
-                        </li>
-                        <li class="header__list_link">
-                            <a href="#scheme" class="header__list_item">Схема роботи</a>
-                        </li>
-                        <li class="header__list_link">
-                            <a href="#feedback" class="header__list_item">Відгуки</a>
-                        </li>
-                        <li class="header__list_link">
-                            <a href="#map" class="header__list_item">Контакти</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <div class="header__contacts">
-                        <div class="header__contacts_descr">Є питання?</div>
-                        <a href="tel:380996763412" class="header__contacts_number">
-                            +38 (099) 676-34-12
-                        </a>
+        <nav>        
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 offset-4 col-sm-1 offset-sm-0 col-md-1 offset-md-0">
+                        <img src="icons/logo.png" alt="main_logo" class="header__logo">
+                    </div>
+                    <div class="col-0 col-sm-2 col-md-10 col-lg-7">
+                        <ul class="header__list">
+                            <li class="header__list_link">
+                                <a href="#advantages" class="header__list_item">Переваги</a>
+                            </li>
+                            <li class="header__list_link">
+                                <a href="#work" class="header__list_item">Наша робота</a>
+                            </li>
+                            <li class="header__list_link">
+                                <a href="#prices" class="header__list_item">Ціни</a>
+                            </li>
+                            <li class="header__list_link">
+                                <a href="#scheme" class="header__list_item">Схема роботи</a>
+                            </li>
+                            <li class="header__list_link">
+                                <a href="#feedback" class="header__list_item">Відгуки</a>
+                            </li>
+                            <li class="header__list_link">
+                                <a href="#map" class="header__list_item">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-8 offset-3 col-sm-4 offset-sm-0 col-md-2 offset-md-0">
+                        <div class="header__contacts">
+                            <div class="header__contacts_descr">Є питання?</div>
+                            <a href="tel:380996763412" class="header__contacts_number">
+                                +38 (099) 676-34-12
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-8 offset-3 col-sm-2 offset-sm-0 col-md-2 offset-md-0">
+                        <button data-modal="call" class="button button_header">Передзвоніть мені</button>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <button data-modal="call" class="button button_header">Передзвоніть мені</button>
-                </div>
             </div>
-
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="container">
             <div class="header__company">Global Opt - логістика повного циклу з Європи в Україну</div>
             <div class="header__title">ДОСТАВКА ВАНТАЖІВ З ЄВРОПИ</div>
             <div class="header__subtitle">В УКРАЇНУ УСІМА ВИДАМИ ТРАНСПОРТУ</div>
@@ -97,7 +105,6 @@
             </div>
 
             <button data-modal="order" class="button button_main">отримати розрахунок</button>
-
         </div>
     </header>
 
@@ -279,7 +286,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-5 offset-md-1 col-lg-4 offset-lg-2 col-xl-3 offset-xl-0">
+                <div class="col-12 offset-0 col-sm-8 offset-sm-2 col-md-5 offset-md-1 col-lg-4 offset-lg-2 col-xl-3 offset-xl-0">
                     <div class="prices-item">
                         <div class="prices-item__title">Доставка морем</div>
                         <div class="prices-item__wrapper">
@@ -314,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-4 col-xl-3">
+                <div class="col-12 offset-0 col-sm-8 offset-sm-2 col-md-5 offset-md-0 col-lg-4 offset-lg-0 col-xl-3 offset-xl-0">
                     <div class="prices-item">
                         <div class="prices-item__title">Доставка поїздом</div>
                         <div class="prices-item__wrapper">
@@ -349,7 +356,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 offset-md-1 col-lg-4 offset-lg-2 col-xl-3 offset-xl-0">
+                <div class="col-12 offset-0 col-sm-8 offset-sm-2 col-md-5 offset-md-1 col-lg-4 offset-lg-2 col-xl-3 offset-xl-0">
                     <div class="prices-item">
                         <div class="prices-item__title">Автодоставка</div>
                         <div class="prices-item__wrapper">
@@ -385,7 +392,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-4 col-xl-3">
+                <div class="col-12 offset-0 col-sm-8 offset-sm-2 col-md-5 offset-md-0 col-lg-4 offset-lg-0 col-xl-3 offset-xl-0">
                     <div class="prices-item">
                         <div class="prices-item__title">Авіа доставка</div>
                         <div class="prices-item__wrapper">
@@ -483,7 +490,7 @@
                     <div class="scheme__block">
                         <img src="icons/work_with_us/work_with_us_3.png" alt="scheme_3"  class="scheme__icon">
                         <div class="scheme__text">
-                            <div class="scheme__text_title">договір</div>
+                            <div class="scheme__text_title">Договір</div>
                             <div class="scheme__text_descr">
                                 Укладаємо з Вами договір про постачання вантажу з Європи
                             </div>
@@ -545,8 +552,12 @@
             <div class="subtitle">
                 Ми завжди намагаємося допомогти клієнтам, щоб вони зверталися до нас знову
             </div>
-
-            <div id="carouselExampleControls" class="carousel" data-ride="carousel">
+            <div id="myCarousel" class="carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
                 <div class="carousel-inner" style="margin-top: 31px;">
                   <div class="carousel-item feedback-item active">
                     <img src="icons/feedback/feed_1.png"  alt="feed_1" style="margin: auto;">
@@ -577,11 +588,11 @@
                     </div> 
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -627,15 +638,15 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-1">
+                <div class="col-1 offset-0 col-sm-1 offset-sm-1 col-md-1 offset-md-0">
                     <img src="icons/logo_footer.png" alt="logo_footer" class="footer_icon">
                 </div>
-                <div class="col-md-6 col-lg-5">
+                <div class="col-9 offset-1 col-sm-9 offset-sm-1 col-md-6 offset-md-0 col-lg-5 offset-lg-0">
                     <div class="footer__title">
                         Global Opt - Доставка вантажів з Європи в Україну
                     </div>
                 </div>
-                <div class="col-md-3 offset-md-0 col-lg-2 offset-lg-2">
+                <div class="col-6 offset-0 col-sm-4 offset-sm-2 offset-sm-0 col-md-3 offset-md-0 col-lg-2 offset-lg-2">
                     <div class="footer__contacts">
                         <div class="footer__contacts_descr">Є питання?</div>
                         <a href="tel:380996763412" class="footer__contacts_number">
@@ -643,10 +654,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-4 col-sm-2 col-md-2">
                     <button data-modal="call" class="button button_footer">Передзвоніть мені</button>
                 </div>
-
                 <div class="col-md-4 offset-md-4">
                     <div class="footer__social">
                         <a href="https://www.instagram.com/" class="footer__social_item"><i class="fab fa-instagram"></i></a>
@@ -654,14 +664,11 @@
                         <a href="https://www.linkedin.com/" class="footer__social_item"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-
                 <div class="footer__line"></div>
-
-                <div class="col-md-3">
+                <div class="col-sm-4 col-md-3">
                     <div class="footer__site">© 2020 GlobalOpt.com.ua</div>
                 </div>
-
-                <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-2">
+                <div class="col-sm-6 offset-sm-0 col-md-4 offset-md-1 col-lg-3 offset-lg-2">
                     <a href="" class="footer__conf">Політика конфідеціальності</a>
                 </div>
 
@@ -704,7 +711,7 @@
                 </label>
                 <label>
                     Тип вантажу
-                    <select name="" id="">
+                    <select name="select" id="choice">
                         <option value="Textile">Текстиль</option>
                         <option value="Children">Товари для дітей</option>
                         <option value="Equipment">Обладнання та комплектуючі</option>

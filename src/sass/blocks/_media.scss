@@ -37,6 +37,9 @@
         &_calc {
             margin-top: -20px;
         }
+        &_questions {
+            width: 180px;
+        }
     }
     .title {
         &_agent {
@@ -52,7 +55,6 @@
     .prices {
         padding: 40px 0 40px 0;
     }
-
     .consultation {
         &__button {
             top: 150px;
@@ -102,10 +104,8 @@
                     line-height: 95px;
                 }                                
             }
-    
         }
     }
-
     #result {
         font-size: 14px;
         display: block;
@@ -122,18 +122,15 @@
             font-size: 18px;
         }
     }
-    
     #res {
         font-size: 18px;
         display: inline-block;
         text-decoration: underline;
     }
-
     .managers {
         min-height: 300px;
         padding: 40px 0 40px 0;
     }
-
     .feedback {
         padding: 40px 0 45px 0;
     }
@@ -143,7 +140,6 @@
     .carousel-control-next{
         right: 270px;
     }
-
     .footer {
         &_icon {
             height: 80%;
@@ -166,7 +162,6 @@
 }
 
 @media (max-width: 991px){
-
     .header {
         padding: 20px 0 35px 0;
         &__contacts {
@@ -180,7 +175,6 @@
             font-size: 28px;
         }
     }
-
     .advantages {
         padding: 30px 0 40px 0;
         &__text {
@@ -192,7 +186,6 @@
             }
         }
     }
-
     .work {
         min-height: 540px;
         padding: 30px 0 40px 0;
@@ -208,12 +201,10 @@
             }
         }
     }
-
     .agent {
         min-height: 260px;
         padding: 30px 0 20px 0;
     }
-
     .consultation {
         &__round {
             &_icon {
@@ -221,12 +212,10 @@
             }
         }
     }
-
     .managers {
         min-height: 240px;
         padding: 25px 0 30px 0;
     }
-
     .scheme {
         padding: 35px 0 30px 0;
         &__block {
@@ -236,14 +225,12 @@
             }
         }
     }
-
     .carousel-control-prev{
         left: 180px;
     }
     .carousel-control-next{
         right: 180px;
     }
-
     .questions {
         padding: 35px 0 15px 0;
         &__block {
@@ -251,11 +238,9 @@
             height: 320px;
         }
     }
-
     #map__menu label {
         font-size: 16px;
     }
-
     .footer {
         &_icon {
             height: 75%;
@@ -280,7 +265,6 @@
             }
         }
     }
-
     .feed-form {
         input {
             width: 210px;
@@ -308,13 +292,11 @@
     
         }
     }
-
     .modalw {
         &_order {
             width: 630px;
         }
     }
-
     .title {
         font-size: 23px;
     }
@@ -341,6 +323,473 @@
         height: 90px;
         &_icon {
             padding-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__logo {
+            margin-top: 5px;
+            height: 70%;
+        }
+        &__contacts {
+            display: block;
+            &_descr {
+                text-align: left;
+            }
+            &_number {
+                font-size: 15px;
+            }   
+        }
+        &__list {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            margin-top: 0px;
+            background-color: rgba(0,0,0,.8);
+            transition: 1s all;
+            z-index: 2;
+            &_active {
+                left: 0;
+            }
+            &_link {
+                padding-right: 0;
+                border: none;
+                margin: 10px 0;
+            }
+            &_item {
+                font-size: 20px;
+            }
+        }
+        .hamburger {
+            display: block;
+            position: absolute;
+            right: 25px;
+            top: 57px;
+            width: 26px;
+            height: 12px;
+            span {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 3px;
+                transition: 0.5s all;
+            }
+            &_active {
+                span {
+                    margin-bottom: -2px;
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+        }
+        &__company {
+            font-size: 19px;
+        }
+        &__title {
+            margin-top: 10px;
+            font-size: 32px;
+        }
+        &__subtitle {
+            font-size: 23px;
+        }
+        &__block {
+            margin-top: 20px;
+            &_text {
+                margin-top: 14px;
+            }
+        }
+    }
+    .advantages {
+        &__block {
+            margin-top: 25px;
+        }
+        &__text {
+            &_title {
+                font-size: 16px;
+            }
+            &_descr {
+                font-size: 14px;
+            }
+        }
+    }
+    .work {
+        &__block {
+            margin-top: 20px;
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 60%;
+            }
+            &__text {
+                &_title {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .prices {
+        &-item {
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+    }
+    .consultation {
+        &__button {
+            top: 260px;
+        }
+    }
+    .scheme {
+        padding: 35px 0 50px 0;
+        &__block {
+            margin-top: 20px;
+        }
+    }
+    .feedback {
+        padding: 40px 0 80px 0;
+        &-item {
+            width: 100%;
+        }
+    }
+    .carousel-indicators {
+        display: flex;
+        background-color: white;
+        bottom: -70px;
+        li {
+            background-color: #000000;
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            margin-left: 13px;
+            cursor: pointer;
+            border-radius: 100%;
+        }
+    }
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+    .questions {
+        min-height: 540px;
+        &__block {
+            min-height: 470px;
+        }
+    }   
+    .footer {
+        &__contacts {
+            display: block;
+            &_descr {
+                text-align: left;
+            }
+            &_number {
+                left: 0;
+                font-size: 15px;
+            }   
+        }
+        &__social {
+            margin-top: 35px;
+        }
+    }
+    .feed-form {
+        flex-direction: column;
+        padding-bottom: 45px;
+        input {
+            width: 300px;
+            font-size: 12px;
+            margin: 10px 0px 0px 0px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            &:first-child {
+                margin-top: 65px;
+            }
+        }
+        &_consultation {
+            background-size: 160px 1px, 160px 1px;
+        }
+        &_questions {
+            height: 400px;
+            flex-wrap: nowrap;
+            padding-bottom: 25px;
+            input {
+                &:first-child {
+                    margin-top: 0px;
+                }
+            }
+            .big {
+                margin: 0px 0px 0px 0px;
+                margin-top: 10px;
+                width: 90%;
+                height: 90px;
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &_modal {
+            padding-bottom: 0px;
+            input {
+                &:first-child {
+                    margin-top: 0px;
+                } 
+                width: 100%;
+            }
+        }
+        &_order {
+            label {
+                font-size: 18px;
+                height: 70px;
+                margin-top: 20px;
+                input {
+                    height: 40px;
+                    width: 130px;
+                    margin-left: 50%;
+                }
+                .from, .where{
+                    margin-top: -5px;
+                    width: 170px;
+                }   
+                select {
+                    width: 200px;
+                    font-size: 12px;
+                    margin: 0px 0px 0px 0px;
+                    border-radius: 5px;
+                }
+                i.fas {
+                    line-height: 95px;
+                }                                
+            }
+        }
+    }
+    .modalw {
+        &_order {
+            padding: 0px 0px 0px 0px;
+            width: 430px;
+        }
+    }
+    .title {
+        font-size: 20px;
+    }
+    .subtitle {
+        font-size: 14px;
+    }
+    .button {
+        &_header {
+            display: block;
+        }
+        &_questions {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 160px;
+            font-size: 13px;
+        }
+        &_footer {
+            width: 150px;
+            font-size: 13px;
+        }
+        &_calc {
+            display: inline;
+            margin-left: 20px;
+        }
+    }
+    #result {
+        margin-right: 10px;
+        .info {
+            display: none;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .header {
+        &__list {
+            &_link {
+                text-align: center;
+            }
+            &_item {
+                font-size: 19px;
+            }
+        }
+        &__contacts {
+            margin-top: 0px;
+            &_descr {
+                padding-left: 29px;
+            }
+        }
+        &__company {
+            font-size: 17px;
+        }
+        &__title {
+            margin-top: 20px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__subtitle {
+            font-size: 17px;
+            margin-top: 15px;
+        }
+        &__line {
+            margin-top: 20px;
+        }
+        &__block {
+            &_text {
+                font-size: 13px;
+            }
+        }
+    }
+    .prices {
+        &-item {
+            margin: auto;
+            margin-top: 20px;
+        }
+    }
+    .consultation {
+        &__round {
+            top: 70px;
+        }
+        &__button {
+            top: 235px;
+        }
+    }
+    #map__menu {
+        left: 5px;
+        top: 5px;
+        width: 70%;
+        font-size: 12px;
+        label {
+            margin-top: 5px;
+        }
+    }
+    .mapboxgl-popup {
+        max-width: 150px;
+    }
+    .footer {
+        padding: 24px 0 20px 0;
+        &__title {
+            margin-top: 7px;
+            margin-left: 25px;
+        }
+        &__contacts {
+            &_descr {
+                font-size: 14px;
+            }
+            &_number {
+                font-size: 13px;
+            }
+        }
+        &__site {
+            text-align: center;
+            margin-top: 15px;
+        }
+        &__conf {
+            text-align: center;
+            margin-top: 15px;
+        }
+    }
+    .modalw {
+        padding: 35px 15px 10px 15px;
+        width: 300px;
+        &__subtitle {
+            font-size: 17px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__close {
+            z-index: 2;
+            right: 7px;
+            top: 7px;
+        }
+        &_order {
+            min-height: 310px;
+            padding: 10px 15px 10px 15px;
+        }
+    }
+    .feed-form {
+        padding-bottom: 45px;
+        input {
+            width: 90%;
+            &:first-child {
+                margin-top: 45px;
+            }
+        }
+        &_consultation {
+            background-size: 50px 1px, 50px 1px;
+        }
+        &_questions {
+            padding-bottom: 25px;
+            input {
+                &:first-child {
+                    margin-top: 0px;
+                }
+            }
+        }
+        &_modal {
+            padding-bottom: 0px;
+            input {
+                &:first-child {
+                    margin-top: 0px;
+                } 
+                width: 100%;
+            }
+        }
+        &_order {
+            label {
+                font-size: 14px;
+                height: 70px;
+                margin-top: 0px;
+                margin-left: 0px;
+                margin-bottom: 0px;
+                margin-right: 10px;
+                input {
+                    height: 40px;
+                    width: 120px;
+                    margin-left: 50%;
+                }
+                select {
+                    width: 140px;
+                }                                
+            }
+        }
+    }
+    .button {
+        &_header {
+            margin-top: 10px;
+        }
+        &_questions {
+            margin: 0 auto;
+            margin-top: 35px;
+        }
+        &_footer {
+            width: 130px;
+            font-size: 11px;
+        }
+        &_calc {
+            margin-left: 5px;
+            width: 110px;
+        }
+    }
+    #result {
+        margin: 10px 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 10px 10px;
+        .dollar {
+            font-size: 14px;
+        }
+        #res {
+            font-size: 14px;
         }
     }
 }

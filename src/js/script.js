@@ -15,13 +15,13 @@ $(document).ready(function() {
     toggleSlide('.prices-item__back');
 
     //Параметри для слайдеру
-    $(function () {
-        $('.carousel').carousel({
-          interval: false,
-          keyboard: false,
-        });
+    
+    $('.carousel').carousel({
+        interval: false,
+        keyboard: false,
+        pause: false
     });
-
+    
     //Модальні вікна
     $('[data-modal=call]').on('click', function(){
 		$('.overlay, #call').fadeIn('slow');
@@ -107,8 +107,12 @@ $(document).ready(function() {
                         var result = kg * metr * multi;
                         
                         document.getElementById('res').innerHTML = result;
-
-                        form.attr("style","min-height:400px;");
+                        
+                        if(!window.matchMedia("(max-width: 575px)").matches){
+                            form.attr("style","min-height:400px;");
+                        } else {
+                            form.attr("style","min-height:350px;");
+                        }
                         $('#result').fadeIn('slow');
                         return false;
                     }
@@ -154,3 +158,22 @@ $(document).ready(function() {
         scroll(mashref[i]);
     } 
 });
+
+// зручне меню для мобільних пристроїв
+window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.header__list'),
+    menuItem = document.querySelectorAll('.header__list_item'),
+    hamburger = document.querySelector('.hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('header__list_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('header__list_active');
+        })
+    })
+})

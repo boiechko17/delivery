@@ -30,6 +30,10 @@
     }
 }
 
+.carousel-indicators {
+    display: none;
+}
+
 .carousel-control {
     &-next {
         right: 340px;
