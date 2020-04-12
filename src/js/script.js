@@ -182,6 +182,8 @@ $(document).ready(function() {
     $("input[name=from]").inputmask("м. [*{1,20}][*{1,20}]");
     $("input[name=where]").inputmask("м. [*{1,20}][*{1,20}]");
 
+    new WOW().init();
+
 });
 
 // зручне меню для мобільних пристроїв
