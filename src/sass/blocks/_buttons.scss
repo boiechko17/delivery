@@ -9,6 +9,9 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-top: 21px;
+    &_header {
+        display: block;
+    }
     &_main {
         display: block;
         width: 230px;

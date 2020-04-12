@@ -1,0 +1,346 @@
+@media ( max-width: 1200px) {
+    .header {
+        &__logo {
+            height: 80%;
+        }
+        &__list {
+            &_item {
+                font-size: 14px;
+            }
+            &_link {
+                padding-right: 10px;
+            }
+        }
+        &__contacts {
+            &_number {
+                font-size: 13px;
+            }
+            &_descr {
+                font-size: 14px;
+            }
+        }
+        &__title {
+            font-size: 50px;
+            margin-top: 20px;
+        }
+        &__subtitle {
+            font-size: 35px;
+        }
+    }
+    .button {
+        width: 135px;
+        font-size: 11px;
+        &_main {
+            width: 230px;
+            font-size: 14px;
+        }
+        &_calc {
+            margin-top: -20px;
+        }
+    }
+    .title {
+        &_agent {
+            font-size: 23px;
+        }
+    }
+    .subtitle {
+        font-size: 18px;
+        &_agent {
+            font-size: 16px;
+        }
+    }
+    .prices {
+        padding: 40px 0 40px 0;
+    }
+
+    .consultation {
+        &__button {
+            top: 150px;
+            width: 160px;
+        }
+        &__round {
+            left: 50%;
+        }
+    }
+    .modalw {
+        padding: 20px 15px 20px 15px;
+        &_mini {
+            min-height: 120px;
+        }
+        &_order {
+            width: 700px;
+        }
+    }
+    .feed-form {
+        width: 100%;
+        &_consultation {
+            background-size: 370px 1px, 370px 1px;
+        }
+        &_modal {
+            height: 270px;
+            input {
+                height: 80px;
+            }
+        }
+        &_order {
+            min-height: 220px;
+            label {
+                font-size: 18px;
+                input {
+                    width: 200px;
+                }
+                .from, .where{
+                    width: 250px;
+                }   
+                select {
+                    width: 200px;
+                    font-size: 12px;
+                    margin: 0px 0px 0px 0px;
+                    border-radius: 5px;
+                }
+                i.fas {
+                    line-height: 95px;
+                }                                
+            }
+    
+        }
+    }
+
+    #result {
+        font-size: 14px;
+        display: block;
+        display: none;
+        margin: 25px 0;
+        padding: 15px 15px;
+        margin-left: 10px;
+        border: 1px solid #25333c;
+        .info {
+            display: block;
+            margin-top: 10px;
+        }
+        .dollar {
+            font-size: 18px;
+        }
+    }
+    
+    #res {
+        font-size: 18px;
+        display: inline-block;
+        text-decoration: underline;
+    }
+
+    .managers {
+        min-height: 300px;
+        padding: 40px 0 40px 0;
+    }
+
+    .feedback {
+        padding: 40px 0 45px 0;
+    }
+    .carousel-control-prev{
+        left: 270px;
+    }
+    .carousel-control-next{
+        right: 270px;
+    }
+
+    .footer {
+        &_icon {
+            height: 80%;
+        }   
+        &__title {
+            font-size: 15px;
+        }
+        &__contacts {
+            &_number {
+                font-size: 13px;
+            }
+            &_descr {
+                font-size: 14px;
+            }
+        }
+        &__social {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media (max-width: 991px){
+
+    .header {
+        padding: 20px 0 35px 0;
+        &__contacts {
+            display: none;
+        }
+        &__title {
+            font-size: 40px;
+            margin-top: 15px;
+        }
+        &__subtitle {
+            font-size: 28px;
+        }
+    }
+
+    .advantages {
+        padding: 30px 0 40px 0;
+        &__text {
+            &_title {
+                font-size: 14px;
+            }
+            &_descr {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .work {
+        min-height: 540px;
+        padding: 30px 0 40px 0;
+        &__block {
+            &__text {
+                margin-top: 15px;
+                &_title {
+                    font-size: 15px;
+                }
+                &_descr {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .agent {
+        min-height: 260px;
+        padding: 30px 0 20px 0;
+    }
+
+    .consultation {
+        &__round {
+            &_icon {
+                margin: 0 15px;
+            }
+        }
+    }
+
+    .managers {
+        min-height: 240px;
+        padding: 25px 0 30px 0;
+    }
+
+    .scheme {
+        padding: 35px 0 30px 0;
+        &__block {
+            &_less {
+                margin-top: 35px;
+                margin-left: 0px;
+            }
+        }
+    }
+
+    .carousel-control-prev{
+        left: 180px;
+    }
+    .carousel-control-next{
+        right: 180px;
+    }
+
+    .questions {
+        padding: 35px 0 15px 0;
+        &__block {
+            width: 100%;
+            height: 320px;
+        }
+    }
+
+    #map__menu label {
+        font-size: 16px;
+    }
+
+    .footer {
+        &_icon {
+            height: 75%;
+        }   
+        &__title {
+            font-size: 13px;
+            margin-left: 10px;
+        }
+        &__contacts {
+            position: relative;
+            &_number {
+                position: absolute;
+                right: 0;
+                font-size: 14px;
+            }
+        }
+        &__social {
+            margin-top: 25px;
+            &_item {
+                margin: 0px 0px;
+                margin-right: 25px;
+            }
+        }
+    }
+
+    .feed-form {
+        input {
+            width: 210px;
+            font-size: 12px;
+        }
+        &_consultation {
+            background-size: 245px 1px, 245px 1px;
+        }
+        &_questions {
+            .big {
+                width: 650px;
+            }
+        }
+        &_modal {
+            input {
+                width: 100%;
+            }
+        }
+        &_order {
+            label {
+                input {
+                    width: 160px;
+                }                                
+            }
+    
+        }
+    }
+
+    .modalw {
+        &_order {
+            width: 630px;
+        }
+    }
+
+    .title {
+        font-size: 23px;
+    }
+    .subtitle {
+        font-size: 16px;
+        .br {
+            display: none;
+        }
+        &_agent {
+            margin-top: 10px;
+        }
+    }
+    .button {
+        &_header {
+            display: none;
+        }
+        &_footer {
+            width: 120px;
+            font-size: 9px;
+        }
+    }
+    .round {
+        width: 90px;
+        height: 90px;
+        &_icon {
+            padding-top: 15px;
+        }
+    }
+}

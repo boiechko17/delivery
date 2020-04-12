@@ -97,12 +97,12 @@ $(document).ready(function() {
                     if(form.hasClass('feed-form_order')){
                         var kg = document.getElementById('kilo').value;
                         var metr = document.getElementById('metres').value;
-                        var multi = 210;
-                        if(kg >= 5 ) {
-                            multi /= 3;
+                        var multi = 200;
+                        if(kg >= 10) {
+                            multi *= 1.05;
                         }
-                        if (metr >= 10) {
-                            multi /= 2;
+                        if (metr >= 15) {
+                            multi *= 1.05;
                         }
                         var result = kg * metr * multi;
                         
@@ -126,14 +126,16 @@ $(document).ready(function() {
     checkForms('.feed-form_order');
     
 
-    //показувати pageup коли проксролив до 1600px
-    $(window).scroll(function(){
-		if ($(this).scrollTop() > 1600) {
-			$('.pageup').fadeIn();
-		} else {
-			$('.pageup').fadeOut();
-		}
-	});
+    //показувати pageup коли проксролив до 1600px та тільки на широких екранах
+    if(!window.matchMedia("(max-width: 991px)").matches){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 1600) {
+                $('.pageup').fadeIn();
+            } else {
+                $('.pageup').fadeOut();
+            }
+        });
+    }
     
     // плавний скролінг для локальних посилань
     function scroll(event){

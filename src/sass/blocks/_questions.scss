@@ -1,7 +1,7 @@
 .questions {
     min-height: 438px;
     padding: 62px 0 79px 0;
-    background: url(../../img/planejpg.png) center center/ cover no-repeat;
+    background: url(../img/planejpg.png) center center/ cover no-repeat;
     &__block {
         width: 896px;
         height: 365px;
@@ -19,9 +19,10 @@
         font-weight: 700;
         text-transform: uppercase;
         color: #ffffff;
-        span {
+        h2 {
             font-size: 14px;
             font-weight: 400;
+            margin-bottom: 0;
         }
     }
 }
